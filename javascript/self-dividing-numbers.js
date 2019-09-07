@@ -48,4 +48,7 @@ var selfDividingNumbers = function(left, right) {
 // because it's not n^2, but n _does_ have an impact on the multiplier so it's
 // not totally unimportant.
 
-// we
+// additional efficiencies that could be investigated (but would not change time complexity):
+
+// 1) deduplicate digits before division
+// 2) use even number properties, e.g. order divisors from largest to smallest and if divides by 8, skip 4 and 2
